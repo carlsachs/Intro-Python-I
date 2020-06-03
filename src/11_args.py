@@ -5,8 +5,10 @@
 # the sum. This is what you'd consider to be a regular, normal function.
 
 # YOUR CODE HERE
-
-print(f1(1, 2))
+def f1(num1, num2):
+    y = num1 * num2
+    print(y)
+f1(1, 2)
 
 # Write a function f2 that takes any number of integer arguments and prints the
 # sum.

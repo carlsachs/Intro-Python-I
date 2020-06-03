@@ -55,5 +55,8 @@ print(waypoint)
 
 # YOUR CODE HERE
 
+geocache = Geocache(-121.41, 44.09, "NewBerry Views", "Medium", "10")
+print(geocache)
+
 # Print it--also make this print more nicely
 #print(geocache)

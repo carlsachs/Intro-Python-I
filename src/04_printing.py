@@ -20,4 +20,4 @@ print(string.format(x, y, z))
 
 # Finally, print the same thing using an f-string
 
-f"{x} {y} {z}"
+print(f"{x} {y} {z}")

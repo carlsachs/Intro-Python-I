@@ -37,6 +37,6 @@ x = input("Enter comma-separated numbers: ").split(',')
 input_number = int(input("Enter a number :"))
 
 # What do you need between the square brackets to make it work?
-y = [i for i in range(input_number) if i >= 0]
+y = [i for i in x if i >= 0]
 
 print(y)

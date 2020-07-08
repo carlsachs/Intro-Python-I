@@ -22,10 +22,14 @@ with open("foo.txt") as fp:
 
 # YOUR CODE HERE
 f = open("bar.txt", "w")
-f.read()
 f.write(
     """Line 1
-      Line 2
-      Line 3"""
+Line 2
+Line 3"""
 )
 f.close()
+
+f = open("bar.txt", "r")
+text = f.read()
+f.close()
+print(text)

@@ -54,7 +54,7 @@ print(waypoints)
 
 # YOUR CODE HERE
 
-waypoints[0].update(name = "not a real place")
+waypoints[0].update(name = "not a real place", lon = -130)
 waypoints[0]["name"]
 
 # Write a loop that prints out all the field values for all the waypoints

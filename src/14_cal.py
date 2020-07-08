@@ -31,8 +31,25 @@ import sys
 import calendar
 from datetime import datetime
 
-user_input = sys.argv
-month = user_input[1]
-year = user_input[2]
-print(month, year)
+# Create default time values
+month = datetime.today().month
+year = datetime.today().year
 
+# Update values if supplied by user
+# program name is argv[0]
+if len(sys.argv) == 1:
+  pass
+
+elif len(sys.argv) == 2:
+  month = int(sys.argv[1])
+
+elif len(sys.argv) == 3:
+  month = int(sys.argv[1])
+  year = int(sys.argv[2])
+
+else:
+  print("Invoke with the following: 14_cal.py [month] [year]")
+
+# Instantiate calendar and print
+calendar = calendar.TextCalendar()
+print(calendar.formatmonth(year, month))

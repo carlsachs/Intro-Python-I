@@ -18,21 +18,19 @@ print(x)
 
 # Change x so that it is [1, 2, 3, 4, 9, 10]
 # YOUR CODE HERE
-y.pop(0)
+x.remove(4)
 print(x)
 
 # Change x so that it is [1, 2, 3, 4, 9, 99, 10]
 # YOUR CODE HERE
-x.pop()
-x.extend((99, 100))
+x.insert(4, 9)
 print(x)
 
 # Print the length of list x
 # YOUR CODE HERE
-
 print(len(x))
 
 # Print all the values in x multiplied by 1000
 # YOUR CODE HERE
-
-print([x] * 1000)
+for x in x:
+    print(x * 1000)
